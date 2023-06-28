@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <%= title %>
+        </h1>
+        <p>
+            speak your mind freely
+        </p>
+    </header>
+    <div class="form__wrapper">
+        <form method="post" action="/new">
+            <input type="text" placeholder="Username" name="user" required>
+            <textarea name="text" placeholder="Text" required rows="10" cols="30"></textarea>
+            <input type="submit" class="submit__btn" value="Post">
+        </form>
+    </div>
+
+</body>
+
+</html>
