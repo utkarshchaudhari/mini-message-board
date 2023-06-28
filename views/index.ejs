@@ -29,8 +29,10 @@
         <p>
           <%= message.text %>
         </p>
-        <p>
-          <%= message.added %>
+        <hr>
+        <p class="date">
+          <%= message.added.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})
+            %>
         </p>
       </div>
       <% }) %>
